@@ -2,22 +2,31 @@ table { border: solid medium; border-collapse: collapse;}
 tr {border: solid thin; }
 td {border: solid thin; border-color: black;}
 th:first-child { font-style: italic; font-weight: normal;}
-td:nth-child(2) { color: red;}
+tbody>tr> td:nth-child(2) { color: red;}
 td:nth-child(4) { color: blue;}
 tr:nth-child(even) { background-color: #83F52C;}
 tr:nth-child(odd) { background-color: #8FD8D8;}
 tr:first-child {background-color: white;}
 dt:hover + dd{background-color: purple;}
-input { margin: 5px;}
+tfoot { background-color: black; }
 div.outer-content {
-    margin: 10px 10px 5px 10px; 
+    margin: 20px; 
+    /*top: 20px;*/
     background-color: pink; 
     width: 75vw;
     position: relative;
 }
 div.inner-content {
-    margin: 12.5%;
+    position: relative;
+    /*float: center;*/
+    margin: 0 auto; /* from http://stackoverflow.com/questions/114543/horizontally-center-a-div-in-a-div */
     background-color: #8FD8D8;
-    width: 75%;
+    width: 75%; 
+}
+img { 
+    top: 20px;
+    float: left;
+    height: 125px;
+    width: 100px;
 }
 
